@@ -1,0 +1,33 @@
+﻿  Pong.cpp
+C:\Users\mjaga\source\repos\pong3\pong3\Pong.cpp(28,30): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\mjaga\source\repos\pong3\pong3\Pong.cpp(29,31): warning C4244: '=': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\mjaga\source\repos\pong3\pong3\Pong.cpp(49,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mjaga\source\repos\pong3\pong3\Pong.cpp(63,21): warning C4244: 'initializing': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\mjaga\source\repos\pong3\pong3\Pong.cpp(64,21): warning C4244: 'initializing': conversion from 'const T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\mjaga\source\repos\pong3\pong3\Pong.cpp(66,26): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+C:\Users\mjaga\source\repos\pong3\pong3\Pong.cpp(67,27): warning C4244: 'initializing': conversion from 'T' to 'int', possible loss of data
+          with
+          [
+              T=float
+          ]
+  pong3.vcxproj -> C:\Users\mjaga\source\repos\pong3\Debug\pong3.exe
