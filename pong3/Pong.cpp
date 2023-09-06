@@ -109,6 +109,12 @@ int main()
     if (!bgMusic.openFromFile("resources/MainMusic.ogg"))
         return EXIT_FAILURE;
 
+    sf::Texture texture;
+    if (!texture.loadFromFile("resources/image3.jpg"))
+        return EXIT_FAILURE;
+    sf::Sprite sprite(texture);
+    sprite.scale(sf::Vector2f(2.f, 1.5));
+
     // Create the left paddle
     sf::RectangleShape leftPaddle;
     leftPaddle.setSize(paddleSize - sf::Vector2f(3, 3));
@@ -164,6 +170,8 @@ int main()
     btn2Text.setFillColor(sf::Color::Black);
     btn2Text.setString("QUIT");
 
+ 
+
     // Define the paddles properties
     const float paddleSpeed = 400.f;
     const float ballSpeed   = 400.f;
@@ -181,8 +189,10 @@ int main()
     bool isPlaying = false;
     bgMusic.play();
     bgMusic.setLoop(true);
+    
     while (window.isOpen())
     {
+
         // Handle events
         sf::Event event;
         
@@ -330,6 +340,7 @@ int main()
             player1Score = 0;
             player2Score = 0;
         }
+        window.draw(sprite);
 
         if (isPlaying)
         {
@@ -350,6 +361,7 @@ int main()
         }
 
         // Display things on screen
+        
         window.display();
     }
 
